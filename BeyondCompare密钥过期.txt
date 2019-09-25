@@ -1,0 +1,15 @@
+
+
+1、这是个存在时间很长的问题了，网上转载最多的方法是删除“”C:\Users\[Your User Name]\AppData\Roaming\Scooter Software“文件夹再重新注册。
+
+这种方法能解决3281-0350，但之前的历史记录和各种配置全部丢失，对于做代码维护类工作损失巨大，今天介绍一种以最小代价修复3821-0350的方法：
+
+
+2、用任意文本编辑软件打开“C:\Users\[Your User Name]\AppData\Roaming\Scooter Software\Beyond Compare 3\BCState.xml”
+
+
+3、删除<TCheckForUpdatesState>节点（即<TCheckForUpdatesState>到</TCheckForUpdatesState>之间的部分）,保存退出编辑软件。
+
+
+4、重新打开BeyondCompare3，所有历史记录及配置都有保留，没再弹出3281-0350
+
